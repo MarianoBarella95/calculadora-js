@@ -25,7 +25,13 @@ btnMultiplicar.addEventListener('click', () => {
 
 btnDividir.addEventListener('click', () => {
     let resultado = num1.valueAsNumber / num2.valueAsNumber
-    divResultado.innerHTML = resultado;
+    //divResultado.innerHTML = resultado.slice(0, 6);
+    if (divResultado.innerHTML.length > 6) {
+        divResultado.innerHTML = resultado.slice(0, 6);
+    }
+    else {
+        divResultado.innerHTML = resultado;
+    }
 })
 
 btnReset.addEventListener('click', () => {

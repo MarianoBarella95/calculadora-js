@@ -50,7 +50,6 @@ body {
 .input-number {
     height: 2rem;
     width: 10rem;
-    text-align: center;
     border-radius: .3rem;
     border: none;
     background-color: #f6f6f6;
@@ -75,7 +74,8 @@ body {
 }
 
 .resultado {
-    width: 8rem;
+    padding: 2px;    
+    min-width: 8rem;
     height: 2rem;
     border-radius: .5rem;
     background-color: #f6f6f6;
@@ -95,6 +95,7 @@ body {
 }
 
 .btn-reset {
+    height: 2rem;
     font-weight: 400;
     padding: .5rem;
     cursor: pointer;
