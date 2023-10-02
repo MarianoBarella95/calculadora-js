@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1e1e1e;
+    color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 40rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    font-family: 'Inter', sans-serif;
+}
+
+#titulo {
+    font-size: 3rem;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 16rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* width: 16rem; */
+}
+
+.input-number {
+    height: 2rem;
+    width: 10rem;
+    text-align: center;
+    border-radius: .3rem;
+    border: none;
+    background-color: #f6f6f6;
+}
+
+.btn {
+    cursor: pointer;
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    border-radius: 100%;
+    color: #f6f6f6;
+    background: rgb(131,56,236);
+    background: linear-gradient(90deg, rgba(131,56,236,1) 0%, rgba(255,0,110,1) 100%);
+
+}
+
+.btn:hover {
+    box-shadow: 0 0px 10px #f6f6f6;
+    transform: translateY(-2px);
+}
+
+.resultado {
+    width: 8rem;
+    height: 2rem;
+    border-radius: .5rem;
+    background-color: #f6f6f6;
+    color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.btn-reset {
+    font-weight: 400;
+    padding: .5rem;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    color: #f6f6f6;
+    border-radius: .5rem;
+    background: rgb(131,56,236);
+    background: linear-gradient(90deg, rgba(131,56,236,1) 0%, rgba(255,0,110,1) 100%);
+}
+
+.btn-reset:hover {
+    box-shadow: 0 0px 10px #f6f6f6;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    #titulo {
+        font-size: 2.5rem;
+    }
+
+    .input-number {
+        width: 8rem;
+    }
+}
